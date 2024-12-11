@@ -1,0 +1,21 @@
+{
+    "name": "Python Notebook DevContainer",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": ".."
+    },
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash",
+        "jupyter.notebookFileRoot": "/workspace/notebooks",
+        "python.pythonPath": "/usr/local/bin/python"
+    },
+    "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+        "ms-azuretools.vscode-docker"
+    ],
+    "forwardPorts": [8888],
+    "postCreateCommand": "pip install --no-cache-dir -r requirements.txt",
+    "remoteUser": "root",
+    "workspaceFolder": "/workspace"
+} 
