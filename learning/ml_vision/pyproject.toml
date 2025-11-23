@@ -1,17 +1,10 @@
 [project]
-name = "sneaky-snek"
+name = "ml-vision"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
-    "jupyter>=1.1.1",
-    "matplotlib>=3.10.1",
     "numpy>=2.2.3",
-    "rerun-notebook>=0.22.1",
     "rerun-sdk>=0.22.1",
-    "torch>=2.6.0",
 ]
-
-[tool.uv.workspace]
-members = ["learning/ml_vision"]
